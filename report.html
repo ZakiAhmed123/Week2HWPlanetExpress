@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel=stylesheet href="styles.css">
+    <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages': ['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          [
+            'Pilot', 'Money Made'
+          ],
+          [
+            'Fry', 35000
+          ],
+          [
+            'Amy', 15000
+          ],
+          [
+            'Bender', 355600
+          ],
+          ['Leela', 131295]
+        ]);
+
+        var options = {
+          title: 'Person Salary of All Pilots in Futuruma'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <title>Planet Express Weekly Financials</title>
+  </head>
+  <div class="wrapper">
+  <body>
+    <p>Planet Express Weekly Financials</p>
+    <div class="image">
+
+      <img src="giphy.gif" alt="" />
+
+      <h2>Zoidberg Loves You JWO</h2>
+</div>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+    <div class="totalmoney">
+      Planet Express Total Revenue for Week X is $536895.
+    </div>
+    <table class="gamma">
+      <thead>
+        <tr>
+        <th> Planet </th>
+        <th> Money Made </th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Earth </td>
+          <td>35000.0</td>
+        </tr>
+        <tr>
+          <td> Mercury </td>
+          <td>80000.0</td>
+        </tr>
+        <tr>
+          <td> Moon </td>
+          <td>44500.0</td>
+        </tr>
+        <tr>
+          <td> Mars </td>
+          <td>15000.0</td>
+        </tr>
+        <tr>
+          <td> Jupiter </td>
+          <td>3451.0</td>
+        </tr>
+        <tr>
+          <td> Saturn </td>
+          <td>1000.0</td>
+        </tr>
+        <tr>
+          <td> Pluto </td>
+          <td>2344.0</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="beta">
+      <thead>
+        <tr>
+          <th> Employees </th>
+          <th> Number of Trips </th>
+          <th> Bonus </th>
+        </tr>
+      </thead>
+          <tbody>
+            <tr>
+              <td> Fry </td>
+              <td>2</td>
+              <td>
+                3500.0</td>
+            </tr>
+            <tr>
+              <td> Amy </td>
+              <td>1</td>
+              <td>
+                1500.0</td>
+            </tr>
+            <tr>
+              <td> Bender </td>
+              <td>2</td>
+              <td>
+                35560.0</td>
+            </tr>
+            <tr>
+              <td> Leela </td>
+              <td>5</td>
+              <td>
+                13129.5</td>
+            </tr>
+          </tbody>
+          </table>
+          <table class="alpha">
+            <thead>
+              <tr>
+                <th>
+                  Destinations
+                </th>
+                <th>
+                  Shipments
+                </th>
+                <th>
+                  Crates
+                </th>
+                <th>
+                  Money
+                </th>
+              </tr>
+            </thead>
+              <tbody>
+                
+                <tr>
+                  <td>
+                    Earth
+                  </td>
+                  <td>
+                    Hamburgers
+                  </td>
+                  <td>
+                    150
+                  </td>
+                  <td>
+                    30000.0
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    Moon
+                  </td>
+                  <td>
+                    Tacos
+                  </td>
+                  <td>
+                    33
+                  </td>
+                  <td>
+                    44500.0
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    Earth
+                  </td>
+                  <td>
+                    Movies
+                  </td>
+                  <td>
+                    34
+                  </td>
+                  <td>
+                    5000.0
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    Mars
+                  </td>
+                  <td>
+                    BBQ Sauce
+                  </td>
+                  <td>
+                    999
+                  </td>
+                  <td>
+                    15000.0
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    Uranus
+                  </td>
+                  <td>
+                    Whiskey
+                  </td>
+                  <td>
+                    1000
+                  </td>
+                  <td>
+                    345600.0
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    Jupiter
+                  </td>
+                  <td>
+                    Books
+                  </td>
+                  <td>
+                    10
+                  </td>
+                  <td>
+                    3451.0
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    Pluto
+                  </td>
+                  <td>
+                    Beer
+                  </td>
+                  <td>
+                    100
+                  </td>
+                  <td>
+                    2344.0
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    Uranus
+                  </td>
+                  <td>
+                    Pizza
+                  </td>
+                  <td>
+                    66
+                  </td>
+                  <td>
+                    10000.0
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    Saturn
+                  </td>
+                  <td>
+                    Pizza
+                  </td>
+                  <td>
+                    26
+                  </td>
+                  <td>
+                    1000.0
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    Mercury
+                  </td>
+                  <td>
+                    Pizza
+                  </td>
+                  <td>
+                    36
+                  </td>
+                  <td>
+                    80000.0
+                  </td>
+                </tr>
+                
+              </tbody>
+          </table>
+        </body>
+      </div>
+      </html>
